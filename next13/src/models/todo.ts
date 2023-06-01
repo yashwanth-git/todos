@@ -18,3 +18,7 @@ const TodoSchema = new Schema({
     type: Date,
   },
 });
+
+const Todo = models.Todo || model("Todo", TodoSchema);
+
+export default Todo;
