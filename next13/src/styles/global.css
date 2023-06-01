@@ -23,17 +23,18 @@ body {
   font-size: 2.5rem;
   font-weight: 400;
 }
-.new-cta {
+.cta {
   padding: 0.5em 0.75em;
   font-size: 1.25rem;
   cursor: pointer;
+  background-color: transparent;
   border: 1px solid #f0e7e7;
   color: #f0e7e7;
   border-radius: 5px;
   text-decoration: none;
   outline: none;
 }
-.new-cta:hover {
+.cta:hover {
   background-color: #484e5c;
 }
 .todo-item {
@@ -41,10 +42,32 @@ body {
   gap: 1rem;
   align-items: center;
 }
-.todo-check, .todo-check + label {
+.todo-check,
+.todo-check + label {
   cursor: pointer;
 }
-.todo-check:checked + label{
+.todo-check:checked + label {
   text-decoration: line-through;
   color: #a3a1a1;
+}
+.todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.form-ctas{
+  display: flex;
+  gap: 1em;
+  justify-content: end;
+}
+.todo-input {
+  border: 1px solid #f0e7e7;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.65em 0.65em;
+  font-size: 1.125rem;
+  color: #f0e7e7;
+  outline: none;
+  background: transparent;
 }

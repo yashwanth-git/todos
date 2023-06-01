@@ -42,7 +42,7 @@ const Home = () => {
     <>
       <header className="header">
         <h1 className="logo-text">Todos</h1>
-        <Link className="new-cta" href="/new">
+        <Link className="cta" href="/new">
           New
         </Link>
       </header>
