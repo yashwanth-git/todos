@@ -52,14 +52,15 @@ body {
 }
 .todo-form {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2em;
 }
-.form-ctas{
+.form-ctas {
   display: flex;
   gap: 1em;
   justify-content: end;
+  margin-top: 1em;
 }
 .todo-input {
   border: 1px solid #f0e7e7;

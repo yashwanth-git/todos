@@ -11,33 +11,15 @@ type TodoProps = {
 } 
 const Home = () => {
   const [todos, setTodos]  = useState<TodoProps[]>([]);
-  // const createTodo = async () => {
-  //   try {
-  //     const response = await fetch("/api/todos/new", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         id: "test",
-  //         title: "test",
-  //         complete: 1,
-  //         createdAt: Date.now(),
-  //         updatedAt: Date.now(),
-  //       }),
-  //     });
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
   useEffect(() => {
     const fetchTodos = async () => {
       const response = await fetch("api/todos");
 
       const data = await response.json();
-      console.log(data);
       setTodos(data);
     };
     fetchTodos();
   }, []);
-  console.log(todos);
   return (
     <>
       <header className="header">
@@ -48,7 +30,7 @@ const Home = () => {
       </header>
       <ul className="">
         {todos.map(todo => (
-          <TodoItem key={todo._id} id={todo._id} title={todo._id} complete={1>0} />
+          <TodoItem key={todo._id} id={todo._id} title={todo.title} complete={1>0} />
         ))}
       </ul>
     </>
