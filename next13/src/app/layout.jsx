@@ -1,3 +1,4 @@
+import "@styles/global.css";
 export const metadata = {
   title: "Todos App | Next13",
   description: "Todos app holds the todo list which has CRUD operations",
