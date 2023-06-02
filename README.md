@@ -5,5 +5,5 @@ Collections of todos app for each language or framework which I learn.
 - [ ] JS
 - [ ] React
 - [ ] Vue
-- [ ] Next
+- [x] Next
 - [ ] Angular
